@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(249,249,249);
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+
+}
+
+img {
+  width: 97%;
+}
+
+p {
+  line-height: 1.7em;
+}
+
+h1, h2, h3 {
+  color: black;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+h3 {
+  font-weight: 330;
+  font-size: 1.4em;
+}
+
+span {
+  color: black;
+  font-weight: bold;
+}
+
+/******************************/
+
+#home {
+  margin-top: 20px;
+}
+
+#home p, #contact p {
+  color: grey;
+  font-weight: 100;
+}
+
+#portfolio {
+  background-color: white;
+  text-align: center;
+  margin: 60px 0;
+  padding: 40px 0;
+}
+
+
+#contact {
+  margin-bottom: 60px;
+}
+
+/******************************/
+.wrapper {
+  padding: 0 3%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1100px;
+}
+
+.main-header {
+  margin-top: 40px;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 16px;
+  margin-bottom: 1.3em;
+}
+
+.main-nav {
+  text-align: center;
+}
+
+.main-nav li {
+  background-color: white;
+  padding: 1px 0;
+  margin-bottom: 5px;
+}
+
+.profile-pic {
+  width: 70%;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.project {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.project p {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 100;
+}
+
+.main-footer {
+  border-top: lightgrey 1px solid;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.name-footer {
+  float: left;
+  text-transform: capitalize;
+}
+
+.back {
+  float: right;
+  font-size: .85em;
+}
+
+.back a {
+  color: rgb(80,80,80);
+}
+
+.footer-nav ul {
+  display: none;
+}
+
+/******************************/
+
+@media (min-width: 768px) {
+
+  .main-nav li {
+    display: inline-block;
+    background-color: inherit;
+    padding: 0 4%;
+  }
+
+  .main-nav h2 {
+    margin-top: 0;
+  }
+
+  .profile-pic {
+    float: right;
+    width: 45%;
+  }
+
+  #home p {
+    float: left;
+    width: 50%;
+    margin-top: 0;
+    text-align: left;
+    font-size: 1.4em;
+  }
+
+  .project {
+    float: left;
+    width: 50%;
+  }
+
+  #contact p {
+    font-size: 1.4em;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+  }
+
+  .back {
+    display: none;
+  }
+
+  .footer-nav {
+    float: right;
+    width: 60%;
+    font-size: .9em;
+    text-align: right;
+  }
+
+  .footer-nav ul {
+    margin-top: 0;
+    display: inline-block;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    background-color: inherit;
+    padding: 0 5px;
+  }
+
+  .project {
+    float: left;
+    width: 33%;
+  }
+
+
+}
+
+/******************************/
+
+.debug {
+  border: tomato 2px solid;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
